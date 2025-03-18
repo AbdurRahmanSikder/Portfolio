@@ -10,23 +10,26 @@
 }
 
 .contact-title {
-  font-size: 1.8rem;
-  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-size: 1.875rem;
+  font-weight: 500; 
   color: #222;
 }
 
 .contact-subtitle {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  color: #023CB6;
+  font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .contact-links {
   display: flex;
-  gap: 50px;
+  gap: 15px;
   justify-content: flex-start;
 }
-
 .contact-card {
   display: flex;
   align-items: center;
@@ -34,16 +37,18 @@
   background: #f8f9fc;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Default shadow */
+  outline: 1px solid rgba(209, 213, 219, 0.8); /* Equivalent to ring-1 ring-gray-300 */
   text-decoration: none;
   color: #222;
-  transition: 0.3s ease-in-out;
-  flex: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-card:hover {
-  background: #eef2ff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Equivalent to hover:shadow-lg */
+  outline-color: rgba(156, 163, 175, 1); /* Equivalent to hover:ring-gray-400 */
 }
+
 
 .contact-icon {
   font-size: 2rem;

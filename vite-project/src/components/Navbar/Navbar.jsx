@@ -8,8 +8,8 @@ function Navbar() {
         <div className='Navbar'>
             <div className="name">a. rahman</div>
             <div className="contact">
-                <FaLinkedin className='linkedin' />
-                <FaGithub className='github' />
+               <a href='https://www.linkedin.com/in/abdurrahman040/'><FaLinkedin className='linkedin' /></a> 
+               <a href='https://github.com/AbdurRahmanSikder'><FaGithub className='github' /></a>
             </div>
         </div>
     )

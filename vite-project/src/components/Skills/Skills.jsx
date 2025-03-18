@@ -7,25 +7,128 @@ const skillsData = {
   FrontEnd: [
     {
       id: 1,
-      name: "Flutter",
-      description: "For crafting high-performance, cross-platform mobile and web applications with a smooth user experience.",
-      icon: <FaFlutter className="flutter" />,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+        
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
     },
     {
       id: 2,
-      name: "FlutterFlow",
-      description: "For crafting high-performance, no-code cross-platform mobile and web applications with a smooth user experience.",
-      icon: <SiFlutter className="flutterflow" />,
+      icon: (      
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
     },
     {
       id: 3,
-      name: "JavaScript",
-      description: "For developing fast, efficient web and mobile applications with a modern user experience.",
-      icon: <FaJs className="js" />,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 4,
+      icon: (
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 5,
+      icon: (
+        
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"  
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
     },
   ],
-  Backend: [],
-  Others: [],
+  Backend: [
+    {
+      id: 1,
+      icon: (
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"         
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 2,
+      icon: (      
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+        alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 3,
+      icon: (      
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" 
+        alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      )
+    }
+  ],
+  Others: [
+    {
+      id: 1,
+      icon: (
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"          
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 2,
+      icon: (      
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+        alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      )
+    }
+  ],
 };
 
 function Skills() {
@@ -35,7 +138,6 @@ function Skills() {
     <div className="skills-container">
       <h2 className="skills-title">Skills</h2>
       <p className="skills-subtitle">Tools and technologies I enjoy working with</p>
-
       <div className="skills-tabs">
         {Object.keys(skillsData).map((category) => (
           <button
@@ -52,8 +154,9 @@ function Skills() {
         {skillsData[selectedCategory].length > 0 ? (
           skillsData[selectedCategory].map((skill) => (
             <div key={skill.id} className="skill-card">
-              <div className="skill-icon">{skill.icon}</div>
-              <h3 className="skill-name">{skill.name}</h3>
+              {/* <div className="skill-icon">{skill.icon}</div> */}
+              {skill.icon}
+              {/* <h3 className="skill-name">{skill.name}</h3>
               <p className="skill-description">
                 {skill.description.split(" ").map((word, index) =>
                   ["cross-platform", "no-code", "efficient"].includes(word) ? (
@@ -64,12 +167,14 @@ function Skills() {
                     " " + word
                   )
                 )}
-              </p>
+              </p> */}
             </div>
           ))
         ) : (
           <p className="no-skills">No skills available in this category.</p>
         )}
+        
+          
       </div>
     </div>
   );

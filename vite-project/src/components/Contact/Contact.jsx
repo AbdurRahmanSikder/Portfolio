@@ -10,7 +10,7 @@ function Contact() {
       <p className="contact-subtitle">I would like to work with you ...</p>
 
       <div className="contact-links">
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-card">
+        <a href="https://www.linkedin.com/in/abdurrahman040/" target="_blank" rel="noopener noreferrer" className="contact-card">
           <div className="contact-icon">
             <FaLinkedin className="linkedin-icon" />
           </div>
@@ -21,7 +21,7 @@ function Contact() {
           <FaExternalLinkAlt className="external-icon" />
         </a>
 
-        <a href="mailto:your.email@example.com" className="contact-card">
+        <a href="mailto:19cse040@gmail.com" className="contact-card">
           <div className="contact-icon">
             <SiGmail className="email-icon" />
           </div>

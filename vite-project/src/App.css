@@ -2,3 +2,10 @@
   width: 80%;
   margin: 20px auto;
 }
+
+@media (min-width: 768px) {
+  .content{
+    width: 50%;
+    margin: 20px auto;
+  }
+}
