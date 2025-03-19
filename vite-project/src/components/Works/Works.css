@@ -13,14 +13,14 @@
   gap: 15px;
 }
 .cp-container {
-  max-width: 300px;
+  min-width: 300px;
   font-family: "Inclusive Sans", sans-serif;
   /* max-width: 600px; */
   /* margin: auto; */
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Default shadow */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
   outline: 1px solid rgba(209, 213, 219, 0.8); /* Equivalent to ring-1 ring-gray-300 */
 }
 .project-container {
@@ -30,14 +30,14 @@
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Default shadow */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
   outline: 1px solid rgba(209, 213, 219, 0.8); /* Equivalent to ring-1 ring-gray-300 */
 }
 
 .title {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 550;
+  font-weight: 500;
   color: #333;
   /* margin-bottom: 4px; */
 }
@@ -46,14 +46,15 @@
   display: flex;
   align-items: center;
   /* background: #f8f9fc; */
-  padding: 15px;
+  padding: 0px 15px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  background: #eef2ff;
+  background: #f8f9fa;
 }
 
 .icon {
@@ -84,6 +85,7 @@
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 8px;
 }
@@ -100,17 +102,40 @@
   color: #333;
 }
 
-.flutter {
-  color: #02569b;
-}
+@media (max-width: 1300px){
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+  .cp-container {
+    /* max-width: 300px; */
+    min-width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
+    outline: 1px solid rgba(209, 213, 219, 0.8); /* Equivalent to ring-1 ring-gray-300 */
+  }
+  .project-container {
+    min-width: 100%;
+    font-family: "Inclusive Sans", sans-serif;
+    /* max-width: 600px; */
+    /* margin: auto; */
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
+    outline: 1px solid rgba(209, 213, 219, 0.8); /* Equivalent to ring-1 ring-gray-300 */
+  }
 
-.dart {
-  color: #0175c2;
-}
-
-.js {
-  color: #f7df1e;
-  background: black;
-  padding: 3px 5px;
-  border-radius: 4px;
+  .icon {
+    font-size: 1.8rem;
+    /* background: #f1f3f5; */
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+    color: #555;
+    
+  }
 }

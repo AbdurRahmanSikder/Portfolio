@@ -43,7 +43,7 @@
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     .Home {
       margin-top: 50px;
       flex-direction: column;

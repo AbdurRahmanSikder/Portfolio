@@ -9,119 +9,137 @@ import shop from '../../assets/shopping-cart.png'
 import { SiDart } from "react-icons/si";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-console.log(cf);
 const programing = [
     {
         id: 1,
         title: "Codeforces",
-        description: "pupil max rating 1320",
+        description: "Pupil max rating 1320",
+        url: "https://codeforces.com/profile/Abdur_Rahman040", // Add link here
         icon: (
             <img src={cf}
-                alt="JavaScript Logo"
+                alt="Codeforces Logo"
                 width="30"
                 height="30"
             />
-        )
+        ),
+        technologies: [
+            { name: "C++" },
+            { name: "DSA" },
+        ],
     },
     {
         id: 2,
         title: "Code Chef",
-        description: "3 star coder",
+        description: "3-star coder max rating 1662",
+        url: "https://www.codechef.com/users/abdurrahman_40", // Add link here
         icon: (
             <img src={chef}
-                alt="JavaScript Logo"
+                alt="CodeChef Logo"
                 width="30"
                 height="30"
             />
-        )
+        ),
+        technologies: [
+            { name: "C++" },
+            { name: "DSA" }
+        ],
     },
 ];
 
 const projects = [
     {
         id: 1,
-        title: "Expence Tracker",
-        description: "A simple Flutter app to track expenses with basic UI and functionality.",
+        title: "E-commerce",
+        description: "A fast and user-friendly E-commerce platform built with the MERN stack.",
+        url: "https://your-ecommerce-website.com", // Add link here
         icon: (
             <img src={shop}
-                alt="JavaScript Logo"
+                alt="Shopping Cart"
                 width="30"
                 height="30"
             />
         ),
         technologies: [
-            {name: "MongoDB"},
-            {name: "Express"},
-            {name: "React"},
-            {name: "NodeJs"},
+            { name: "MongoDB" },
+            { name: "Express" },
+            { name: "React" },
+            { name: "NodeJs" },
         ],
     },
     {
         id: 2,
-        title: "TodoList App - Javascript",
-        description: "A JavaScript app for managing tasks with DOM updates.",
+        title: "TodoList App",
+        description: "A simple and efficient MERN-based To-Do List app to organize your tasks effortlessly.",
+        url: "https://your-todolist-app.com", // Add link here
         icon: (
             <img src={todo}
-                alt="JavaScript Logo"
+                alt="Todo List"
                 width="30"
                 height="30"
             />
         ),
         technologies: [
-            {name: "MongoDB"},
-            {name: "Express"},
-            {name: "React"},
-            {name: "NodeJs"},
-    ]
+            { name: "MongoDB" },
+            { name: "Express" },
+            { name: "React" },
+            { name: "NodeJs" },
+        ]
     },
 ];
 
 function ProjectCard() {
     return (
         <>
-            <div className="works">
-                Works
-            </div>
+            <div className="works">Works</div>
             <div className="main-container">
                 <div className="cp-container">
-                    <h2 className="title">Competitive Programing</h2>
+                    <h2 className="title">Competitive Programming</h2>
                     {programing.map((project) => (
-                        <div key={project.id} className="project-card">
-                            <div className="icon">
-                                {project.icon}
+                        <a href={project.url} >
+                            <div key={project.id} className="project-card">
+                                <div className="icon">{project.icon}</div>
+                                <div className="content">
+                                    <h3 className="project-title">
+                                        {project.title}
+                                    </h3>
+                                    <p className="description">{project.description}</p>
+                                    <div className="tags">
+                                        {project.technologies.map((tech, index) => (
+                                            <span key={index} className="tech-tag">
+                                                {tech.icon} {tech.name}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
-                            <div className="content">
-                                <h3 className="project-title">{project.title}</h3>
-                                <p className="description">{project.description}</p>
-
-                            </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
-
 
                 <div className="project-container">
                     <h2 className="title">Learning Projects</h2>
                     {projects.map((project) => (
-                        <div key={project.id} className="project-card">
-                            <div className="icon">
-                                {project.icon}
-                            </div>
-                            <div className="content">
-                                <h3 className="project-title">{project.title}</h3>
-                                <p className="description">{project.description}</p>
-                                <div className="tags">
-                                    {project.technologies.map((tech, index) => (
-                                        <span key={index} className="tech-tag">
-                                            {tech.icon} {tech.name}
-                                        </span>
-                                    ))}
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
+                            <div key={project.id} className="project-card">
+                                <div className="icon">{project.icon}</div>
+                                <div className="content">
+                                    <h3 className="project-title">
+                                        {project.title}
+                                    </h3>
+                                    <p className="description">{project.description}</p>
+                                    <div className="tags">
+                                        {project.technologies.map((tech, index) => (
+                                            <span key={index} className="tech-tag">
+                                                {tech.icon} {tech.name}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
-            </div>
+            </div >
         </>
     );
 }
