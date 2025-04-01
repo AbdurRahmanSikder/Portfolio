@@ -7,13 +7,17 @@
     font-size: 1.875rem;
     font-weight: 500; 
     color: #222;
+
 }
 .main-container {
   display: flex;
   gap: 15px;
 }
 .cp-container {
-  min-width: 300px;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-family: "Inclusive Sans", sans-serif;
   /* max-width: 600px; */
   /* margin: auto; */
@@ -25,7 +29,10 @@
 }
 .project-container {
   font-family: "Inclusive Sans", sans-serif;
-  /* max-width: 600px; */
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   /* margin: auto; */
   background: #ffffff;
   padding: 20px;
@@ -102,7 +109,7 @@
   color: #333;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1023px){
   .main-container {
     display: flex;
     flex-direction: column;

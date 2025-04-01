@@ -1,11 +1,12 @@
-.content{
-  width: 80%;
-  margin: 20px auto;
+.content {
+  width: 1024px; /* Fixed width */
+  margin: 0px auto;
+  padding: 0 10px;
 }
 
-@media (min-width: 768px) {
-  .content{
-    width: 50%;
-    margin: 20px auto;
+@media (max-width: 1050px) {
+  .content {
+    width: 95%; /* Fixed width for larger screens */
+    /* margin: 20px auto; */
   }
 }

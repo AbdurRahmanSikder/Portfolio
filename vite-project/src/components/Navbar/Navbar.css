@@ -5,6 +5,7 @@ a {
 }
 
 .Navbar {
+  margin-top: 10px;
   font-family: 'Inclusive Sans', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -43,7 +44,7 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 1300px) {
+@media (max-width: 765px) {
   .Navbar {
     padding: 15px 0px;
   }
@@ -54,6 +55,6 @@ a {
 
   .contact .linkedin,
   .contact .github {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }

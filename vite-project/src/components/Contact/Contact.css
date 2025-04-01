@@ -83,12 +83,13 @@
 
 .footer {
   margin-top: 100px;
+  margin-bottom: 40px;
   font-size: 0.9rem;
   color: #777;
   text-align: left;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 765px){
   .contact-links {
     display: flex;
     flex-direction: column;

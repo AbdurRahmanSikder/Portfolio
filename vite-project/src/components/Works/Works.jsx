@@ -51,7 +51,7 @@ const projects = [
         id: 1,
         title: "E-commerce",
         description: "A fast and user-friendly E-commerce platform built with the MERN stack.",
-        url: "https://your-ecommerce-website.com", // Add link here
+        url: "https://drive.google.com/file/d/1xr6yBmCvI34wBtKS9ju42BlZKwT2WWbp/view?usp=sharing", // Add link here
         icon: (
             <img src={shop}
                 alt="Shopping Cart"
@@ -70,7 +70,7 @@ const projects = [
         id: 2,
         title: "TodoList App",
         description: "A simple and efficient MERN-based To-Do List app to organize your tasks effortlessly.",
-        url: "https://your-todolist-app.com", // Add link here
+        url: "https://todo-app-frontend-5o64.onrender.com/", // Add link here
         icon: (
             <img src={todo}
                 alt="Todo List"

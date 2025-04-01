@@ -7,17 +7,21 @@ import Home from './components/Home/Home'
 import Works from './components/Works/Works'
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
+import Resume from './components/resume/Resume'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='content'>
-      <Navbar />
-      <Home />
-      <Works />
-      <Skills />
-      <Contact />
-    </div>
+    <>
+      <div className='content'>
+        <Navbar />
+        <Home />
+        <Works />
+        <Skills />
+        <Contact />
+      </div>
+      <Resume />
+    </>
   )
 }
 
