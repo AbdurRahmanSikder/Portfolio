@@ -49,9 +49,9 @@ const programing = [
 const projects = [
     {
         id: 1,
-        title: "E-commerce",
+        title: "TechLand Fullstack-E-commerce",
         description: "A fast and user-friendly E-commerce platform built with the MERN stack.",
-        url: "https://drive.google.com/file/d/1xr6yBmCvI34wBtKS9ju42BlZKwT2WWbp/view?usp=sharing", // Add link here
+        url: "https://tech-land-frontend.vercel.app/", 
         icon: (
             <img src={shop}
                 alt="Shopping Cart"
@@ -64,6 +64,7 @@ const projects = [
             { name: "Express" },
             { name: "React" },
             { name: "NodeJs" },
+            { name: "Tailwind CSS" },
         ],
     },
     {
@@ -84,7 +85,7 @@ const projects = [
             { name: "React" },
             { name: "NodeJs" },
         ]
-    },
+    }
 ];
 
 function ProjectCard() {
