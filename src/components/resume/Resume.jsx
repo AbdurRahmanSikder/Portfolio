@@ -8,7 +8,7 @@ const Resume = () => {
 
     return (
         <a
-            href="hhttps://drive.google.com/file/d/1nBVV6yZehrbAj7A2jMWcZ9AdPYxteZxP/view?usp=sharing"
+            href="https://abdurrahman040.vercel.app/"
             download
             className="download-cv-button"
             onMouseEnter={() => setHover(true)}
