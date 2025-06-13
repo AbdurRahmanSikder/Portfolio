@@ -2,7 +2,7 @@ import React from "react";
 import "./Works.css";
 // import { FaFlutter, FaJs } from "react-icons/fa";
 import { FaFlutter, FaJs } from "react-icons/fa6";
-import cf from '../../assets/codeforces.png'
+import cf from '../../assets/Codeforces.png'
 import chef from '../../assets/Codechef.png'
 import todo from '../../assets/todo list.png'
 import shop from '../../assets/shopping-cart.png'
