@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .content {
   width: 1024px; /* Fixed width */
   margin: 0px auto;

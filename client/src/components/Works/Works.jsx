@@ -6,9 +6,7 @@ import cf from '../../assets/Codeforces.png'
 import chef from '../../assets/Codechef.png'
 import todo from '../../assets/todo list.png'
 import shop from '../../assets/shopping-cart.png'
-import { SiDart } from "react-icons/si";
-import { HiOutlineDocumentText } from "react-icons/hi";
-
+import {useAppContext} from "../../contextApi/contextApi.jsx"
 const programing = [
     {
         id: 1,
@@ -46,49 +44,10 @@ const programing = [
     },
 ];
 
-const projects = [
-    {
-        id: 1,
-        title: "TechLand Fullstack-E-commerce",
-        description: "A fast and user-friendly E-commerce platform built with the MERN stack.",
-        url: "https://tech-land-frontend.vercel.app/", 
-        icon: (
-            <img src={shop}
-                alt="Shopping Cart"
-                width="30"
-                height="30"
-            />
-        ),
-        technologies: [
-            { name: "MongoDB" },
-            { name: "Express" },
-            { name: "React" },
-            { name: "NodeJs" },
-            { name: "Tailwind CSS" },
-        ],
-    },
-    {
-        id: 2,
-        title: "TodoList App",
-        description: "A simple and efficient MERN-based To-Do List app to organize your tasks effortlessly.",
-        url: "https://todo-app-frontend-5o64.onrender.com/", // Add link here
-        icon: (
-            <img src={todo}
-                alt="Todo List"
-                width="30"
-                height="30"
-            />
-        ),
-        technologies: [
-            { name: "MongoDB" },
-            { name: "Express" },
-            { name: "React" },
-            { name: "NodeJs" },
-        ]
-    }
-];
-
-function ProjectCard() {
+const ProjectCard =  () => {
+    const {projects} = useAppContext();
+    
+    console.log(projects);
     return (
         <>
             <div className="works">Works</div>
@@ -107,7 +66,7 @@ function ProjectCard() {
                                     <div className="tags">
                                         {project.technologies.map((tech, index) => (
                                             <span key={index} className="tech-tag">
-                                                {tech.icon} {tech.name}
+                                                 {tech.name}
                                             </span>
                                         ))}
                                     </div>
@@ -119,10 +78,10 @@ function ProjectCard() {
 
                 <div className="project-container">
                     <h2 className="title">Learning Projects</h2>
-                    {projects.map((project) => (
+                    {projects.filter((p)=>p.isComplete===true).map((project) => (
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
                             <div key={project.id} className="project-card">
-                                <div className="icon">{project.icon}</div>
+                                <div className="icon"><img className="w-[30px] h-[30px]" src={project.image} alt="" /></div>
                                 <div className="content">
                                     <h3 className="project-title">
                                         {project.title}
@@ -131,7 +90,7 @@ function ProjectCard() {
                                     <div className="tags">
                                         {project.technologies.map((tech, index) => (
                                             <span key={index} className="tech-tag">
-                                                {tech.icon} {tech.name}
+                                                {tech} 
                                             </span>
                                         ))}
                                     </div>

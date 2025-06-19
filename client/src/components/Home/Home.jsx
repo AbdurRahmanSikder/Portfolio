@@ -1,3 +1,4 @@
+import React from 'react'
 import codingImage from '../../assets/coding.webp';
 import './Home.css'
 function Home() {
