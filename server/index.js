@@ -7,7 +7,7 @@ import connectCloudinary from "./config/cloudinary.js";
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 5000;
-const originAllowed = ['http://localhost:5173'];
+const originAllowed = ['http://localhost:5173','https://abdurrahman040.vercel.app'];
 
 app.use(cors({
     origin: originAllowed,
