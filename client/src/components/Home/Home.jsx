@@ -6,8 +6,8 @@ function Home() {
     <div className='Home'>
       <div className="details">
         <div className="full-name">Abdur Rahman Sikder Nayan</div>
-        <div className="my-title">Web Developer</div>
-        <div className="article">Hi, I’m Abdur Rahman Sikder Nayan — a MERN stack developer and competitive programmer with 1400+ problems solved. I build full-stack apps like TechLand and have solid skills in JavaScript, C++, OOP, and DSA. I’m seeking a software engineering role to grow and build impactful solutions.</div>
+        <div className="my-title">Full-Stack MERN Developer</div>
+        <div className="article">Hi, I’m a full-stack web developer specializing in the MERN stack (MongoDB, Express, React, Node.js) with a strong foundation in problem-solving and algorithmic thinking.</div>
       </div>
       <div className="codingimage">
         <img src={codingImage} alt="Coding" />
