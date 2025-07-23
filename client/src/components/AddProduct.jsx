@@ -10,7 +10,7 @@ const AddProject = () => {
   const [technologies, setTechnologies] = useState([]);
   const [image, setImage] = useState(null);
 
-  const techOptions = ['MongoDB', 'Express', 'React', 'NodeJS', 'TailwindCSS'];
+  const techOptions = ['MongoDB', 'Express', 'React', 'NodeJS', 'TailwindCSS', 'NextJS'];
 
   const { axios, navigate, projects, setProjects } = useAppContext();
 
