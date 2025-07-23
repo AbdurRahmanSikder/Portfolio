@@ -8,7 +8,7 @@ const Resume = () => {
 
     return (
         <a
-            href="https://drive.google.com/file/d/1qpgwKKpdkg4AOzAvluKfIeoMMBr8jcng/view?usp=sharing"
+            href="https://drive.google.com/file/d/19YngJk7lOmaTMdo-WrRG2PfUEn11XuTn/view?usp=sharing"
             download
             className="download-cv-button"
             onMouseEnter={() => setHover(true)}
