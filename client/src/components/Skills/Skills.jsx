@@ -114,6 +114,18 @@ const skillsData = {
           height="50"
         />
       )
+    },
+    {
+      id: 4,
+      icon: (
+        
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+          />
+      ),
+
     }
   ],
   Others: [
