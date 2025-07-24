@@ -77,7 +77,20 @@ const skillsData = {
         />
       ),
 
-    }
+    },
+    {
+      id: 7,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+        
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
   ],
   Backend: [
     {
